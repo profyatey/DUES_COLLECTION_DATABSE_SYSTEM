@@ -1,0 +1,126 @@
+/* General page styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 30px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+ background: linear-gradient(135deg, #227a38, #f11515);
+ border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+/* Card container grid */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Card style */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+h2, h3 {
+  margin-top: 0;
+  color: #444;
+}
+
+/* Links */
+.nav-link {
+  display: block;
+  text-decoration: none;
+  background-color: #ad2121;
+  color: white;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #0056b3;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select {
+  padding: 10px;
+  margin: 8px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #ad2121;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #ad2121;
+}
+/* --- Bottom Button Container --- */
+.bottom-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;   /* space from the previous cards */
+  margin-bottom: 40px;
+}
+
+/* --- The single bottom card/button --- */
+.bottom-button .dashboard-card {
+  width: 300px;
+  text-align: center;
+  border-radius: 16px;
+  padding: 35px 20px;
+  background: linear-gradient(135deg, #138d31, #b41212);
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bottom-button .dashboard-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+/* --- Icon Styling --- */
+.bottom-button .dashboard-card .icon {
+  font-size: 55px;
+  margin-bottom: 8px;
+}
+
+/* --- Text Styling --- */
+.bottom-button .dashboard-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
